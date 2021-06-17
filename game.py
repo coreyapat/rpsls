@@ -7,7 +7,8 @@ class Game:
         self.player_two = None
 
     def round_loop(self):
-        
+        pass
+
 
 
     def run_game(self):
@@ -20,11 +21,12 @@ class Game:
         # Check if there is a game winner - if so, end game, otherwise REPEAT
 
 
-
         print("Welcome To RPSLS!")
         self.choose_game_type()
         self.player_one.the_gesture()
         self.player_two.the_gesture()
+        self.choose_game_type()
+
         if self.player_one.chosen_gesture == "rock":
             if self.player_two.chosen_gesture == "rock":
                 print("Tie")
